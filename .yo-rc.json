@@ -1,0 +1,16 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.14.0",
+    "libraryName": "calling-cards",
+    "libraryId": "ff394d82-1418-4041-9639-1015de350dda",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "calling-cards",
+    "solutionShortDescription": "calling-cards description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

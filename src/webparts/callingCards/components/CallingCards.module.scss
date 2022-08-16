@@ -1,0 +1,164 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+.callingCards {
+  overflow: hidden;
+  padding: 1em;
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+  &.teams {
+    font-family: $ms-font-family-fallbacks;
+  }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(auto);
+    row-gap: 10px;
+    column-gap: 10px;
+
+    
+}
+
+    .grid::before {
+        content: '';
+        width: 0;
+        padding-bottom: 25%;
+        grid-row: 1 / 1;
+        grid-column: 1 / 1;
+    }
+
+    .grid > *:first-child {
+        grid-row: 1 / 1;
+        grid-column: 1 / 1;
+    }
+    /* Just to make the grid visible */
+
+    .grid > * {
+        background: white;
+        border: 1px white solid;
+    }
+
+.block {
+    display: block;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(auto);
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.block::before {
+    content: '';
+    width: 0;
+    padding-bottom: 25%;
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
+}
+
+.block > *:first-child {
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
+}
+/* Just to make the grid visible */
+
+.block > * {
+    background: white;
+    border: 1px white solid;
+}
+
+.tile {
+    display: grid; 
+    grid-template-columns: 140px 217px;
+    column-gap:5px;
+    height: 100%;
+    flex-direction: column;
+    align-content: center;
+    min-height: 0;
+    position: relative;
+}
+
+.leadershipImage {
+    float: left;
+    height: 174px;
+    width: 140px;
+    padding: 5px;
+    padding-right: 5px;
+}
+
+.textContainer {
+    display:flex;
+    padding-left: 8px;
+    align-items:flex-start;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    min-height: 0;
+    position: relative;
+    row-gap: 1px;
+}
+
+.textStyles {
+    font-size: small;
+    width: calc(100% - 60px);
+    white-space: nowrap;
+    vertical-align:middle;
+}
+
+.bioStyles {
+    font-size: medium;
+    color: blue;
+    width: calc(100% - 60px);
+    white-space: nowrap;
+    vertical-align: middle;
+
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.nameStyles {
+    font-size: medium;
+    color: blue;
+    width: calc(100% - 60px);
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.emailStyles {
+    font-size: small;
+    width: calc(100% - 60px);
+    white-space: normal;
+    color: dodgerblue;
+    vertical-align: middle;
+
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+    
+    
+
+.welcome {
+  text-align: center;
+  width:100%;
+}
+
+.links {
+  a {
+    text-decoration: none;
+    color: "[theme:link, default:#03787c]";
+    color: var(--link); // note: CSS Custom Properties support is limited to modern browsers only
+
+    &:hover {
+      text-decoration: underline;
+      color: "[theme:linkHovered, default: #014446]";
+      color: var(--linkHovered); // note: CSS Custom Properties support is limited to modern browsers only
+    }
+  }
+}
