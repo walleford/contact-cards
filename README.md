@@ -4,7 +4,6 @@
 
 Calling Cards can be used to create contact/general information tiles for agency/directorate leadership members. It gives the option for their name, email, multiple phone numbers, a link to their biography (if needed), and uploading an image. 
 
-![image-1.png](./image-1.png)
 
 ## Used SharePoint Framework Version
 
